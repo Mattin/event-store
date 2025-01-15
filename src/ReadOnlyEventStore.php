@@ -26,7 +26,7 @@ interface ReadOnlyEventStore
         StreamName $streamName,
         int $fromNumber = 1,
         ?int $count = null,
-        MetadataMatcher $metadataMatcher = null
+        ?MetadataMatcher $metadataMatcher = null
     ): Iterator;
 
     public function loadReverse(
